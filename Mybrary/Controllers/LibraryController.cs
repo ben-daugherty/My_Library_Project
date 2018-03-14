@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Mybrary.Controllers
 {
-    public class HomeController : Controller
+    public class LibraryController : Controller
     {
         public ActionResult Index()
         {
