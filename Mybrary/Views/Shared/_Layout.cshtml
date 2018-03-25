@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Oepn sans embed -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
     <title>@ViewBag.Title - My Library</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -31,9 +33,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer id="foot">
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+       
     </div>
 
     @Scripts.Render("~/bundles/jquery")

@@ -1,4 +1,8 @@
-﻿body {
+﻿* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -7,6 +11,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top:30px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -24,22 +29,49 @@ textarea {
 }
 
 footer {
-    color: green;
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
 }
 
-#foot {
-    color: green;
-    
-}
+
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     z-index: -1;
+    padding: 30px;
+    top: 20px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 100px;
 }
+
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.headline {
+    color: #f7b733;
+}
+
+#headline2 {
+    color: #4abdac;
+  
+}
+
+p {
+    font-size:18px;
+}
+
 
