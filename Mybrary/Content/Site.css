@@ -5,6 +5,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #d9e6e2;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -29,12 +30,14 @@ textarea {
 }
 
 footer {
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
     position: fixed;
     left: 0;
-    bottom: 0;
-    width: 100%;
-
-    text-align: center;
+    color: #868686;
 }
 
 
@@ -62,7 +65,7 @@ h2 {
 
 
 .headline {
-    color: #f7b733;
+    color: #fc4a1a;
 }
 
 #headline2 {
@@ -71,7 +74,15 @@ h2 {
 }
 
 p {
-    font-size:18px;
+    font-size:16px;
+    color:black;
 }
 
+.libraryh2 {
+    color: black;
+}
+
+td a {
+    color:white;
+}
 

@@ -3,31 +3,31 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    
+
 }
 
-<h2>My Library</h2>
+<h2 class="libraryh2">My Library</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Author)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </th>
-        <th></th>
+
+
+    <th>
+        @Html.DisplayNameFor(model => model.Title)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.Author)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.PublishDate)
+    </th>
+
+    <th></th>
     </tr>
 
-    <footer>
-        <p>&copy; @DateTime.Now.Year - My Library App</p>
-    </footer>
+
 
 
     @foreach (var item in Model)
@@ -42,12 +42,20 @@
             <td>
                 @Html.DisplayFor(modelItem => item.PublishDate)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            <td class="btn btn-primary">
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) 
+            </td>
+            <td class="btn btn-success">
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) 
+                </td>
+            <td class="btn btn-danger">
                 @Html.ActionLink("Delete", "Delete", new { id = item.ID })
             </td>
         </tr>
     }
 
 </table>
+
+<footer class="text-muted">
+    <p>&copy; @DateTime.Now.Year - My Library App</p>
+</footer>
