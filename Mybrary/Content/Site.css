@@ -1,5 +1,5 @@
 ﻿* {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Play', sans-serif;
 }
 
 body {
@@ -61,6 +61,7 @@ img {
 
 h2 {
     margin-bottom: 20px;
+    font-family: 'Play', sans-serif;
 }
 
 
@@ -85,4 +86,10 @@ p {
 td a {
     color:white;
 }
+
+.navbar-inverse .navbar-brand:hover {
+    color: #fc4a1a;
+}
+
+
 
