@@ -1,10 +1,12 @@
 ﻿* {
     font-family: 'Play', sans-serif;
+    margin: 0;
+    padding:0;
+
 }
 
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    height:100%;
     background-color: #d9e6e2;
 }
 
@@ -12,7 +14,7 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top:30px;
+    padding-top:90px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -29,16 +31,6 @@ textarea {
     max-width: 280px;
 }
 
-footer {
-    margin-top: 100px;
-    display: block;
-    width: 100%;
-    text-align: center;
-   
-    left:0;
-    bottom:0;
-    color: #8a7a7a !important;
-}
 
 
 
@@ -91,7 +83,23 @@ td a {
     color: #fc4a1a;
 }
 
+body.site {
+    min-height:100%
 
+}
 
+site-content {
+    overflow: auto;
+    padding-bottom:70px;
+    height:2000px;
 
+}
 
+footer {
+    color: #8a7a7a !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
