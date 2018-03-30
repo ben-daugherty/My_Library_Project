@@ -17,6 +17,8 @@ namespace Mybrary.DAL
         {
         }
 
+        //Data model entity class for books
+
         public DbSet<Book> Books { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
         

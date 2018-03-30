@@ -11,6 +11,9 @@ namespace Mybrary.DAL
     {
         protected override void Seed(LibraryContext context)
         {
+
+            //Generating book test data
+
             var book = new List<Book>
             {
             new Book{Title="Crime and Punishment", Author="Fyodor Dostoyevsky", PublishDate=1865},

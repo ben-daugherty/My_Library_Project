@@ -7,6 +7,8 @@ namespace Mybrary.Models
 {
     public class Book
     {
+
+        //Creating properties for the logic of the Book Model
         public int ID { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }

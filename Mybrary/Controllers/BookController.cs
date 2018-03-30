@@ -15,7 +15,7 @@ namespace Mybrary.Controllers
     {
         private LibraryContext db = new LibraryContext();
 
-        // GET: Book
+        // getting a list from the Books entity
         public ActionResult Index()
         {
             return View(db.Books.ToList());
@@ -43,8 +43,7 @@ namespace Mybrary.Controllers
         }
 
         // POST: Book/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Title,Author,PublishDate")] Book book)
@@ -75,8 +74,7 @@ namespace Mybrary.Controllers
         }
 
         // POST: Book/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Title,Author,PublishDate")] Book book)
